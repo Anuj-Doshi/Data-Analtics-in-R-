@@ -1,0 +1,257 @@
+mont<-c("Jan","Feb","Mar","Apr")
+sale<-c(100,220,333,444,555,666,777)
+png(file="sales_barchart.png")
+barplot(sale,main="Sales Bar CHart",xlab = "Sales",ylab="Months",col ="black")
+dev.off()
+getwd()
+source('~/.active-rstudio-document', echo=TRUE)
+#--------Program-2----------------
+com<-c("Google","Yahoo","Stack","Youtube")
+com<-c("Google","Yahoo","Stack","Youtube")
+com<-c("Google","Yahoo","Stack","Youtube")
+pr<-"100"
+png(file="comp_barchart.png")
+barplot(com,col="Black")
+barplot(pr,col="Black")
+pr<-100
+png(file="comp_barchart.png")
+barplot(pr,col="Black")
+install.packages("xlsx")
+install.packages("xlsx")
+install.packages("xlsx")
+install.packages("xlsx")
+png(file="sales_barchart.png")
+barplot(sale,main="Sales Bar CHart",xlab = "Sales",ylab="Months",col ="black",horiz = TRUE)
+dev.off()
+install.packages("xlsx")
+v=gl(3,4,labels = c("Cricket","Bas","Foot"))
+v
+v=gl(2,4,labels = c("Cricket","Bas","Foot"))
+v
+source('C:/Users/Anuj/Downloads/project1.r')
+getwd()
+setwd("C:/Users/Anuj/Downloads")
+data_read=read.csv("googleplaystore1.csv")
+df=as.data.frame(data_read)
+#----------Head-----------
+head(df)
+#----------Tail-----------
+tail(df)
+#----------names----------
+names(df)
+#----------Factor--------
+factor(df)
+#----------Levels--------
+levels(df)
+#----------Structure-----
+str(df)
+install.packages("ggplot2")
+library(ggplot2)
+setwd("C:/Users/Anuj/Downloads/Project")
+data_read=read.csv("Sample.csv")
+df=as.data.frame(data_read)
+png("Histogram for category.png")
+qplot(df$Category,geom="histogram",binwidth=5,  main="Histogram for Category", xlab="Category",  fill=I("lightsalmon"), col=I("red"), alpha=I(.2))
+cat=data_frame$Category
+cat=df$Category
+cat=cat[1:10]
+cat
+cat=table(cat)
+cat
+png("Histogram for category.png")
+qplot(cat,geom="histogram",binwidth=5,  main="Histogram for Category", xlab="Category",  fill=I("lightsalmon"), col=I("red"), alpha=I(.2))
+png("Histogram for category.png")
+ggplot(data=df, aes(df$Category)) + geom_histogram(breaks=...(20, 50, by=2))
+ggplot(data=df, aes(df$Category)) + geom_histogram(breaks=(20, 50, by=2))
+ggplot(data=df, aes(df$Category)) + geom_histogram()
+png("Histogram for category.png")
+qplot(cat, geom="histogram")
+qplot(cat, geom="histogram",binwidth=5)
+ggplot(data=df, aes(x=df$Category, y=df$Rating, fill=variable) +geom_bar(width=1) +scale_y_continuous(expand = c(0,0)) +opts(axis.text.x=theme_text(angle=90))
+dev.off()
+ggplot(data=df, aes(x=df$Category, y=df$Rating, fill=variable) +geom_bar(width=1) +scale_y_continuous(expand = c(0,0)) +opts(axis.text.x=theme_text(angle=90))
+png("Histogram for category.png")
+ggplot(data=df, aes(x=df$Category, y=df$Rating, fill=variable) +geom_bar(width=1) +scale_y_continuous(expand = c(0,0)) +opts(axis.text.x=theme_text(angle=90))
+ggplot(data=df, aes(x=df$Category, y=df$Rating, fill=variable) +geom_bar(width=1) +scale_y_continuous(expand = c(0,0)) +opts(axis.text.x=theme_text(angle=90)))
+ggplot(data=df, aes(x=df$Category, y=df$Rating, fill=variable) +geom_bar(width=1) +scale_y_continuous(expand = c(0,0)) +opts(axis.text.x=theme_text(angle=90)))
+data=melt(data_read)
+df=as.data.frame(data_read)
+cat=df$Category
+cat=table(cat)
+hist(cat,xlab = "Category",col = "lightsalmon")
+dev.off()
+hist(cat,xlab = "Category",col = "lightsalmon",las=1,breaks=5)
+dev.off()
+hist(cat,xlab = "Category",col = "lightsalmon",xlim=c(100,700), las=1, breaks=5, prob = TRUE)
+dev.off()
+hist(cat,xlab = "Category",col = "lightsalmon", las=1, breaks=5, prob = TRUE)
+dev.off()
+hist(cat,xlab = "Category",col = "lightsalmon", las=1, breaks=5, prob = TRUE,ylab ="Range")
+dev.off()
+hist(cat,xlab = "Category",col = "lightsalmon",ylab ="Range")
+dev.off()
+png("Histogram for category.png")
+hist(cat,xlab = "Category",col = "lightsalmon",ylab ="Range")
+dev.off()
+#-----------
+mtcars
+df
+input=df[,c('Reviews','Rating')]
+input
+png(file = "Scatterplot rating vs reviews.png")
+plot(x = input$Reviews,y = input$Rating,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating")
+dev.off()
+df
+rat=df[3]
+rev=df[4]
+table(rat,rev)
+rat=rat[1:10]
+rat
+table(rat)
+rat=rat[1:10]
+rat=c(df[3])
+rat
+rat=rat[1:10]
+table(rat)
+rev=c(df[4])
+rev
+rev=rev[1:10]
+png(file = "Scatterplot rating vs reviews-1.png")
+plot(x = rat,y = rev,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating")
+rat=c(df[[3]])
+rev=c(df[[4]])
+rat=rat[1:10]
+rev=rev[1:10]
+png(file = "Scatterplot rating vs reviews-1.png")
+plot(x = rat,y = rev,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating")
+dev.off()
+rev
+plot(x = rat,y = rev,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating",xlim = c(0,1000))
+dev.off()
+plot(x = rat,y = rev,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating",ylim = c(0,1000))
+dev.off()
+plot(x = rat,y = rev,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating")
+dev.off()
+png(file = "Scatterplot rating vs reviews-1.png")
+plot(x = rat,y = rev,xlab = "Reviews",ylab = "Rating",main = "Reviews vs Rating")
+dev.off()
+png(file = "boxplot.png")
+boxplot(rat ~ rev, data = df, xlab = "Number of Cylinders",ylab = "Miles Per Gallon", main = "Mileage Data")
+dev.off()
+png(file = "boxplot.png")
+boxplot(rat ~ rev, data = df, xlab = "Rating",ylab = "Reviews", main = "Boxplot For Rating vs Reviews",notch = TRUE,varwidth = TRUE)
+dev.off()
+png(file = "boxplot.png")
+boxplot(rat ~ rev, data = df, xlab = "Rating",ylab = "Reviews", main = "Boxplot For Rating vs Reviews")
+dev.off()
+png(file = "Boxplot For Rating vs Reviews.png")
+boxplot(rat ~ rev, data = df, xlab = "Rating",ylab = "Reviews", main = "Boxplot For Rating vs Reviews")
+dev.off()
+png(file="Barplot For Rating.png")
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+dev.off()
+rat
+rat=rat[1:10]
+rat=table(rat)
+png(file="Barplot For Rating.png")
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+dev.off()
+cat=df$Category
+cat=cat[1:10]
+png(file="Barplot For Rating.png")
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=cat,col="palevioletred1")
+cat
+cat=table(cat)
+png(file="Barplot For Rating.png")
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=cat,col="palevioletred1")
+dev.off()
+rat=rat[1:10]
+png(file="Barplot For Rating.png")
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+dev.off()
+rat
+rat=rat[1:10]
+rat
+setwd("C:/Users/Anuj/Downloads/Project")
+data_read=read.csv("Sample.csv")
+df=as.data.frame(data_read)
+rat=rat[1:10]
+#----------Barplot For Rating-----------
+rat=c(df[[3]])
+rat=rat[1:10]
+rat
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+dev.off()
+ret1=table(rat)
+png(file="Barplot For Rating.png")
+barplot(rat1,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+barplot(ret1,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+dev.off()
+ret
+ret1
+png(file="Barplot For Rating.png")
+barplot(rat,xlab="Rating",ylab="Range",main="Barplot For Rating",names.arg=rat,col="palevioletred1")
+dev.off()
+rat=c(data_frame[[3]])
+cat=data_frame$Category
+rat=c(df[[3]])
+cat=df$Category
+rat=rat[1:10]
+cat=cat[1:10]
+png("Line Chart Rating vs Category.png")
+plot(rat,cat,type="o", xlab="Rating",ylab="Categroy")
+box()
+axis(3)
+axis(4)
+axis(side=1,at=cat,labels = cat,tck=-0.5)
+dev.off()
+install.packages("plotrix")
+library(plotrix)
+rat=c(df[[3]])
+cat=df$Category
+rat=rat[1:10]
+cat=cat[1:10]
+cats=table(cat)
+png("PIE.png")
+pie3D(cat,labels=cat,explode=0.1,main="Pie Chart of Countries ")
+cat
+cats=table(cat)
+cats
+pie3D(cats,labels=cat,explode=0.1,main="Pie Chart of Countries ")
+dev.off()
+png("PIE.png")
+pie3D(rat,labels=rat,explode=0.1,main="Pie Chart of Countries ")
+dev.off()
+png("PIE Chart For Rating.png")
+pie3D(rat,labels=rat,explode=0.1,main="Pie Chart of Countries ")
+dev.off()
+setwd("C:/Users/Anuj/Downloads")
+data_read=read.csv("googleplaystore1.csv")
+df=as.data.frame(data_read)
+summary(df)
+mean(df)
+mean(df$Rating)
+mean(df$Reviews)
+rat=c(df[[3]])
+rat=rat[1:10]
+rats=table(rat)
+mean(rats)
+rev=c(df[[4]])
+rev
+rev=rev[1:10]
+revs=table(rev)
+mean(revs)
+median(rats)
+rat
+mean(rat)
+mean(rev)
+median(rat)
+median(rev)
+mode(rev)
+lm(rat~rev)
+linear=lm(rat~rev)
+print(summary(linear))
+result=predict(linear)
+result
+source('C:/Users/Anuj/Downloads/Project/Final.R')
+install.packages("ggplot2")
